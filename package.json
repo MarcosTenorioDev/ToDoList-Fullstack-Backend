@@ -2,10 +2,10 @@
   "name": "backend-crud",
   "version": "1.0.0",
   "description": "Criação de um CRUD fullstack com node.js e postgree",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
