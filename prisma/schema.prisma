@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://admin:admin@localhost:5432"
+  url      = "postgres://cozyxdvd:k0OQ_eEWmskOp3KCs7Z25wN3Y4bdyTuu@silly.db.elephantsql.com/cozyxdvd"
 }
 
 model Todo {
