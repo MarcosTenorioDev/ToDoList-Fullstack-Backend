@@ -8,11 +8,20 @@ services:
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_USER=admin
-      - POSTGRES_PASSWORD=admin
-      - POSTGRES_DB=database
+      - POSTGRES_USER=cozyxdvd
+      - POSTGRES_PASSWORD=k0OQ_eEWmskOp3KCs7Z25wN3Y4bdyTuu
+      - POSTGRES_DB=cozyxdvd
     volumes:
       - pgdata:/data/postgres
+
+    backend:
+      build: ./prisma/schema.prisma
+      restart: always
+      ports:
+        - 3333:3333
+      environment:
+        - DATABASE_URL=postgres://cozyxdvd:k0OQ_eEWmskOp3KCs7Z25wN3Y4bdyTuu@silly.db.elephantsql.com:5432/cozyxdvd
+
 
 volumes:
   pgdata:
