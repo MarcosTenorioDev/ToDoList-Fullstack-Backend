@@ -1,5 +1,5 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
+//postgresql://admin:admin@localhost:5432
+//docker
 
 generator client {
   provider = "prisma-client-js"
@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgres://cozyxdvd:k0OQ_eEWmskOp3KCs7Z25wN3Y4bdyTuu@silly.db.elephantsql.com/cozyxdvd"
+  url      = "postgres://gfkikuva:fQLwgJY3Kqn3pYktwyOM32gGt59lBo16@silly.db.elephantsql.com/gfkikuva"
 }
 
 model Todo {
